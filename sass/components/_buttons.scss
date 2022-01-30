@@ -1,0 +1,105 @@
+.btn{
+	&:link,
+	&:visited{
+		text-decoration:none;
+		text-transform:uppercase;
+		padding:1rem 3rem;
+		border-radius:5rem;
+		font-size:$default-font-size;
+		color:$white;
+		position:relative;
+		border:2px solid $brown;
+
+		display:inline-block;
+		transition: all 0.2s
+	}
+
+	&:hover{
+		outline:none;
+		tranform:translateY(-3px);
+		box-shadow:0 1rem 2rem rgba($black,0.5);
+	}
+
+	&:active{
+		transform:translateY(+1px);
+		box-shadow:0 0.5rem 1rem rgba($black,0.5);
+	}
+
+	&--brown{
+	background-color:$brown;
+	color:$grey-light-1;
+	margin-right:1rem;
+	}
+
+	&--plan{
+	background-color:$brown;
+	color:$grey-light-1;
+	margin-right:1rem;
+	}
+}
+
+.btn-about{
+	&:link,
+	&:visited{
+
+	color:$brown;
+	text-decoration:none;
+	text-transform:capitalize;
+	border-bottom:1px solid $brown;
+	padding:1rem 3rem;
+	font-size:$default-font-size;
+	transition: all 0.2s;
+
+	}
+
+
+	&:hover{
+	background-color:$brown;
+	color:$white;
+	box-shadow:0 1rem 2rem rgba($black,0.5);
+	transform:translateY(-3px);
+	
+	}
+
+	&:active{
+	box-shadow:0 .5rem 1rem rgba($black,0.5);
+	transform:translateY(+1px);
+	
+	}
+
+}
+
+.btn-form{
+	&:link,
+	&:visited{
+
+	color:$white;
+	text-decoration:none;
+	text-transform:capitalize;
+	border-bottom:1px solid $white;
+	padding:1rem 3rem;
+	font-size:$default-font-size;
+	transition: all 0.2s;
+
+	}
+
+
+	&:hover{
+	background-color:$brown;
+	color:$white;
+	box-shadow:0 1rem 2rem rgba($black,0.5);
+	border-bottom:1px solid $brown;
+	transform:translateY(-3px);
+	
+	}
+
+	&:active{
+	box-shadow:0 .5rem 1rem rgba($black,0.5);
+	transform:translateY(+1px);
+	
+	}
+
+}
+
+
+

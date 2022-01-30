@@ -1,0 +1,98 @@
+.amenity-box{
+
+	border-radius:3px;
+	box-shadow:0 1.5rem 4rem rgba($black,0.2);
+	width:28rem;
+	height:40rem;
+	color:$white;
+	position:relative;
+
+	&--1{
+		background-image:linear-gradient(to right bottom, rgba($primary-light,0.3),rgba($primary-dark,0.3)),url(../img/amenity-img-1.jpg);
+		background-size:cover;
+		background-position:78% 50%;
+	}
+
+	&--2{
+		background-image:linear-gradient(to right bottom, rgba($primary-light,0.3),rgba($primary-dark,0.3)),url(../img/amenity-img-2.jpg);
+		background-size:cover;
+		background-position:78% 50%;
+	}
+	&--3{
+		background-image:linear-gradient(to right bottom, rgba($primary-light,0.3),rgba($primary-dark,0.3)),url(../img/amenity-img-3.jpg);
+		background-size:cover;
+		background-position:78% 50%;
+	}
+	&--4{
+		background-image:linear-gradient(to right bottom, rgba($primary-light,0.3),rgba($primary-dark,0.3)),url(../img/amenity-img-4.jpg);
+		background-size:cover;
+		background-position:78% 50%;
+	}
+	
+	&__title{
+		font-size:4rem;
+		text-transform:uppercase;
+		position:absolute;
+		top:50%;
+		@include center-object;
+		opacity:.9;
+		transition: opacity .2s;
+
+	
+	}
+
+	&__overlay{
+	position:absolute;
+	top:0rem;
+	left:0;
+	background-image:linear-gradient(to right bottom, $primary-light,$primary-dark);
+	width:28rem;
+	height:40rem;
+	opacity:0;
+	transition: opacity .2s;
+
+	}
+
+	&:hover &__overlay{
+	opacity:0.7;
+	top:0;
+	transition: opacity .2s;
+	}
+
+	&:hover &__title{
+	opacity:0;
+	transition: opacity .2s;
+	}
+
+	&__content{
+	width:85%;
+	top:10%;
+	position:absolute;
+	@include center-object;
+	opacity:0;
+	transition:all 0.4s;
+
+	&:hover{
+	opacity:1;
+	top:50%;
+	}
+
+	}
+
+	&__icon{
+	font-size:6rem;
+	margin-bottom:0.5rem;
+	background-image:linear-gradient(to right bottom, $white,$secondary-light);
+	@include clip-text;
+	}
+
+	&__heading{
+
+	}
+
+	&__text{
+	font-size:1.5rem;
+	}
+	
+
+}

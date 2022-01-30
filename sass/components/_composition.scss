@@ -1,0 +1,46 @@
+.composition{
+	position:relative;
+
+	&__img{
+
+		width:65%;
+		box-shadow:0.1rem 1.5rem 4rem rgba($black, .4);
+		border-radius:2px;
+		position:absolute;
+		z-index:10;
+		transition:all 0.4s;
+
+
+		&--1{
+
+		left:5rem;
+		top:4rem;
+
+		}
+		&--2{
+		left: 2 * ($about--horizontal-gutter);
+		top: 2 * ($about--vertical-gutter);
+		
+		}
+
+		&--3{
+		left: 3 * ($about--horizontal-gutter);
+		top: 3 * ($about--vertical-gutter);
+		}
+
+		&:hover{
+		transform:scale(1.07) translateY(-2.5rem);
+		box-shadow: 0 1.75rem 5rem rgba($black, .5);
+		z-index:20;
+		outline:1rem solid $brown;
+
+
+		}
+		
+		&:hover &:__img:not(:hover){
+			transform:scale(0.85);
+			}
+
+
+	}
+}
