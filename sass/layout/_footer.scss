@@ -6,6 +6,7 @@
 	margin-top:5rem;
 
 
+
 	&__navigation {
 		@include top-border;
 	}
@@ -32,14 +33,14 @@
 		&:link,
 		&:visited {
 			color:$grey-light-1;
-			transition:all .4s;
+			transition:all .5s;
 		}
 
 		&:hover,
 		&:active {
 			color:$secondary-4;
-			box-shadow:0 1rem 2rem rgba($black,.4);
-			transform:rotate(5deg) scale(1.3);
+			text-shadow:0 1rem 2rem rgba($black,.4);
+			transform: scale(1.1);
 		}
 	}
 
@@ -64,8 +65,8 @@
 
 		&:hover,
 		&:active {
-			box-shadow:0 1rem 2rem rgba($black,.4);
-			transform:rotate(5deg) scale(1.3);
+			text-shadow:0 1rem 2rem rgba($black,.4);
+			transform: scale(1.1);
 		}
 	
 	}
@@ -77,6 +78,16 @@
 
 	&__logo {
 	
+	}
+
+	&__left{
+		text-align:center;
+	}
+
+	&__columns {
+		display:flex;
+		justify-content:space-between;
+		margin:2rem;
 	}
 
 }
